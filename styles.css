@@ -2,12 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #f1f1f1; /* Light text for contrast */
 }
 
 header {
-  background: #333;
-  color: white;
+  background: #000; /* Black background */
+  color: #f1f1f1; /* Light text color */
   padding: 20px;
   font-size: 24px;
   display: flex;
@@ -22,9 +23,16 @@ header {
 }
 
 .navbar a {
-  color: white;
+  color: #f1f1f1; /* Light text for navbar links */
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+}
+
+.navbar a:hover {
+  color: rgb(65, 65, 251); /* Change text color to blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+  text-underline-offset: 4px; /* Adjust space above the underline */
 }
 
 .hero {
@@ -32,7 +40,11 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  background: linear-gradient(to right, #333, #555);
+  background: linear-gradient(
+    to right,
+    #000,
+    #333
+  ); /* Black to dark gray gradient */
   color: white;
   padding-left: 10%;
   padding-right: 10%;
@@ -61,12 +73,12 @@ header {
 }
 
 .hero-content .name {
-  color: #ffcc00;
+  color: #ffcc00; /* Gold name color */
   font-weight: bold;
 }
 
 .hero-content .role {
-  color: #00ffcc;
+  color: #00ffcc; /* Teal role color */
   font-weight: bold;
 }
 
@@ -75,7 +87,7 @@ header {
   height: 500px; /* Adjusted size for mobile */
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for image */
   margin-top: 20px; /* Space between image and text */
 }
 
