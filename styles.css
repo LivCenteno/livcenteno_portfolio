@@ -182,7 +182,7 @@ header {
 }
 
 .about-text p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -216,4 +216,83 @@ header {
   .about-text p {
     font-size: 16px;
   }
+}
+
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a; /* Matching dark background */
+}
+
+.skills-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffcc00; /* Gold color for emphasis */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 30px; /* Spacing between items */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column; /* Stack image above text */
+  align-items: center;
+  justify-content: center;
+  background: #000; /* Black card */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.skill img.skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px; /* Space between image and text */
+  filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.2));
+}
+
+.skill span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f1f1f1; /* Light text color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Footer Section */
+.footer {
+  background: #0d0d0d;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
 }
